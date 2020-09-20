@@ -1,0 +1,105 @@
+/* background color of app navbar */
+.side-drawer {
+    height: 100%;
+    background-image:linear-gradient(#18a5a7,#d9ecc7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 1px 0px 7px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 400px;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+}
+.side-drawer.open {
+    transform: translateX(0);
+}
+.side-drawer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.side-drawer li {
+    margin: 0.2rem 0;
+}
+
+/* color for text in App navbar */
+.side-drawer a {
+    color:#11393a;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif ;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+    color: #F8ECEC;
+}
+  
+li.dropdown {
+    display: inline-block;
+  }
+
+li a, .dropbtn {
+    display: inline-block;
+    color:transparent;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+ /* active color when hover in dropdown menu*/ 
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:#18a5a7;
+  }
+
+/*dropdown content box*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#d9ecc7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+ /* color on dropdown text*/ 
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.dropdown-content a:hover {background-color: #18a5a7;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* adding space between icon and link*/
+i{
+  display: inline-block;
+  margin-left: 0.5em;
+}
+b{
+  color:#174c4f;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-family: 'Open Sans', sans-serif ;
+}
+
+.subchild{
+  text-indent: 0.5rem;
+}
+
+@media (min-width: 769px){
+    .side-drawer{
+        display: none;
+    }
+}

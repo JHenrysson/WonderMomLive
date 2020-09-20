@@ -1,0 +1,163 @@
+.card{
+    border:none;
+}
+
+#iconnutrition {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 1rem;
+    color: #18a5a7;
+    padding: 1px 3px;
+}
+/**/
+.stars2{
+    display: inline-block;
+    color:gold;
+    margin-left:0;
+    text-align: center;
+    padding: 1px 3px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.stars{
+    display: inline-block;
+    color:gold;
+    margin-left: 1rem;
+    padding: 1px 3px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.icon-start{
+    margin-left: 0;
+    display: inline-block;
+}
+
+#iconrecipe{
+    margin-bottom: 0rem;
+}
+
+#icons-card{
+    vertical-align: middle;
+    margin-left: 1em;
+    line-height: 1em;
+    display: inline-block;
+    font-family:'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.titlecards{
+    text-align: left;
+    color: black;
+    font-size: 2.2rem;
+    padding: 0.7rem 1rem;
+    font-family:'Open Sans', sans-serif;
+}
+
+#img-jumbo-nutrition,#img-jumbo-breakfast,#img-jumbo-lunch, #img-jumbo-dinner, #img-jumbo-snacks{
+    height: auto;
+    width: auto;
+    opacity: .8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+    position: relative;
+}
+#img-jumbo-nutrition{
+    background-image:url("/wondermom/images/nutritionbanner2.jpg");;
+}
+#img-jumbo-breakfast {
+    background-image: url("/wondermom/images/breakfastBanner.jpg");
+}
+#img-jumbo-lunch{
+    background-image: url("/wondermom/images/lunchBanner.jpg");
+}
+#img-jumbo-dinner {
+    background-image: url("/wondermom/images/dinnerBanner.jpg");
+}
+#img-jumbo-snacks{
+    background-image:url("/wondermom/images/snackBanner.jpg");
+
+}
+
+.centered {
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 3px 3px 5px #000000;
+
+  }
+
+.spaceing {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding: 0.3rem;
+    background-color:transparent;
+}
+
+#headline2{
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.card-img-top {
+    height: 15rem;
+    overflow: hidden;
+}
+
+.card-link{
+    color: white;
+    border-radius: 4px;
+    background-color:#18a5a7;
+    font-size: 0.9rem;
+    border: none;
+    padding: 3px 20px;;
+    font-family:'Open Sans', sans-serif;
+}
+
+/*cards columns so it is 4 in big window*/
+.card-columns {
+    column-count: 4;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        margin-bottom: initial;
+    }
+    .card-link{
+        font-size: 0.5rem;
+        padding: 3px 25px;
+    }
+    .card-columns{
+        column-count: 2;
+
+    }
+}
+/*size when big window*/
+@media (min-width: 1209px) {
+    #img-jumbo-nutrition,#img-jumbo-breakfast,#img-jumbo-lunch, #img-jumbo-dinner, #img-jumbo-snacks{
+        padding: 200px;
+    } 
+}
+/*size when app/small window*/
+@media (max-width: 700px) {
+    #img-jumbo-nutrition,#img-jumbo-breakfast,#img-jumbo-lunch, #img-jumbo-dinner, #img-jumbo-snacks{
+        padding: 100px;
+    } 
+}
+
+@media (min-width: 766px){
+    .card-deck .card{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media (min-width: 200px){
+    .card-img-top {
+        overflow: hidden;
+        height: auto;
+    }
+}

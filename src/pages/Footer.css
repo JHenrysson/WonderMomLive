@@ -1,0 +1,40 @@
+ul.list-unstyled li a {
+    text-decoration: none;
+    color: #174c4f;
+    margin-right: 1px;
+    font-size: 20px;
+}
+.mb-1{
+    color: #174c4f;
+}
+a:hover{
+    border-radius: 10px;
+}
+.text{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #174c4f;
+}
+.centerButton{
+   margin-top: 1%;
+}
+#logo{
+    max-width: 15%;
+    margin-bottom: 1%;
+
+}
+i{
+    margin-left: 0;
+}
+
+
+@media (max-width: 768px) {
+    #logo {
+        max-width: 40%;
+    }
+}
+@media (min-width: 768px) {
+    #logo{
+        max-width: 25%;
+}
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd1502e26b.js" crossorigin="anonymous"></script>
+    
+    <title>Wonder Mom</title>
+  </head>
+  <body>
+
+    <noscript></noscript>
+    <div id="root"></div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDc3ELmgEFaQWzT8SP_1QIYkzebG0OonRs",
+    authDomain: "wonder-mom.firebaseapp.com",
+    databaseURL: "https://wonder-mom.firebaseio.com",
+    projectId: "wonder-mom",
+    storageBucket: "wonder-mom.appspot.com",
+    messagingSenderId: "341356991730",
+    appId: "1:341356991730:web:6072d8732af51da1802c6b",
+    measurementId: "G-DP82LHK6F2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  window.db = firebase.firestore();
+  window.auth = firebase.auth();
+</script>
+  </body>
+</html>
